@@ -2,8 +2,10 @@
 
 ## Overview
 
-```
+```bash
 git clone git@github.com:biedermanw/acid.git --recursive
+cd acid
+make up
 ```
 
 Acid is a **React**ive **Flask** container to catalyze the initiation of projects. Built with an integrated React UI, it prioritizes modularity, component-driven development, and clear separation of concerns. This not only streamlines maintenance and user experience enhancements but also fosters consistent, reusable UI development.
@@ -28,12 +30,16 @@ The robustness of Python 3.11 drives Acid's API, complemented by PostgreSQL's re
 
 ## Setup & Development
 
+Check for updates to the submodules.
+
+```bash
+git pull --recurse-submodules
+```
+
 ### Prerequisites
 
 - Docker
-
 - Python 3
-
 - npm
 
 ### Docker Workflow
