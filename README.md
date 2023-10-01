@@ -76,7 +76,7 @@ Shortcut to use `make dowwn; make build; make up` to rebuild and restart service
 make over
 ```
 
-### 🚀 Direct Local Development
+### 💡 Direct Local Development
 
 Setup local development environment: 🛠️
 
