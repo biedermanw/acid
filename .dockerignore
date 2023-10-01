@@ -1,0 +1,24 @@
+# Python related
+__pycache__/
+*.pyc
+*.pyo
+
+# Flask instance folder
+backend/instance/
+
+# Node related
+node_modules/
+frontend/node_modules/
+npm-debug.log
+package-lock.json
+frontend/package-lock.json
+
+# IDE/Editor files
+*.vscode/
+*.idea/
+
+# OS files
+.DS_Store
+
+# Git
+.git/

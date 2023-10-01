@@ -1,0 +1,12 @@
+# Submodules
+api/
+ui/
+
+# IDE/Editor files
+*.vscode/
+
+# OS files
+.env
+
+# Misc
+*.log
