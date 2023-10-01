@@ -1,0 +1,6 @@
+[submodule "api"]
+	path = api
+	url = git@github.com:biedermanw/acid-api.git
+[submodule "ui"]
+	path = ui
+	url = git@github.com:biedermanw/acid-ui.git
