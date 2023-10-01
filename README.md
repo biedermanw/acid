@@ -2,6 +2,10 @@
 
 ## Overview
 
+```
+git clone git@github.com:biedermanw/acid.git --recursive
+```
+
 Acid is a **React**ive **Flask** container to catalyze the initiation of projects. Built with an integrated React UI, it prioritizes modularity, component-driven development, and clear separation of concerns. This not only streamlines maintenance and user experience enhancements but also fosters consistent, reusable UI development.
 
 The incorporation of Docker ensures an environment that champions consistency, portability, and isolation, eliminating the all-too-familiar "it works on my machine" scenario. It streamlines deployment and optimizes resource scalability.
