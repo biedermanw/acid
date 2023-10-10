@@ -65,7 +65,23 @@ db_migrate:
 db_upgrade:
 	docker compose run api flask db upgrade
 
-local: local_flask local_react
+kill_ports:
+	@for port in 5174 5000; do \
+		pid=$$(lsof -ti :$$port); \
+		if [ ! -z "$$pid" ]; then \
+			kill -9 $$pid; \
+		fi \
+	done;
+
+local: kill_ports
+	@echo "Starting Flask and React locally..."
+	@. api/venv/bin/activate && \
+	cd api && flask run & \
+	FLASK_PID=$$!; \
+	cd ui && npm run dev & \
+	REACT_PID=$$!; \
+	trap 'echo "Cleaning up processes..."; if ps -p $$FLASK_PID > /dev/null; then kill $$FLASK_PID; fi; if ps -p $$REACT_PID > /dev/null; then kill $$REACT_PID; fi' INT; \
+	wait;
 
 local_build: local_build_flask local_build_react
 
