@@ -31,7 +31,7 @@ help:
 	@echo "local_clean_react 	- React      		- Clean up local React development environment."
 
 up:
-	FLASK_ENV=$(FLASK_ENV) docker compose up
+	FLASK_ENV=$(FLASK_ENV) docker compose up -d
 
 build:
 	docker compose build

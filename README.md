@@ -3,8 +3,14 @@
 ## 🌐 Overview
 
 ```bash
+# Clone the main repository with its submodules
 git clone git@github.com:biedermanw/acid.git --recursive
 cd acid
+
+# Switch to the `main` branch for each submodule
+git submodule foreach 'git checkout main || :'
+
+# Execute the make up command
 make up
 ```
 
