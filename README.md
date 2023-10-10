@@ -1,9 +1,11 @@
-# Acid
+# 🧪 Acid
 
-## Overview
+## 🌐 Overview
 
-```
+```bash
 git clone git@github.com:biedermanw/acid.git --recursive
+cd acid
+make up
 ```
 
 Acid is a **React**ive **Flask** container to catalyze the initiation of projects. Built with an integrated React UI, it prioritizes modularity, component-driven development, and clear separation of concerns. This not only streamlines maintenance and user experience enhancements but also fosters consistent, reusable UI development.
@@ -12,7 +14,7 @@ The incorporation of Docker ensures an environment that champions consistency, p
 
 The robustness of Python 3.11 drives Acid's API, complemented by PostgreSQL's reliability for data storage. This synergy ensures that Acid scales gracefully, meeting the evolving needs of projects.
 
-## Key Technologies
+## 🛠️ Key Technologies
 
 - **Flask**: Powers the API logic and services.
 - **React**: For a dynamic, responsive UI.
@@ -26,17 +28,21 @@ The robustness of Python 3.11 drives Acid's API, complemented by PostgreSQL's re
 - **Python 3.11**: Provides a versatile and powerful API foundation.
 - **Node.js**: Manages React dependencies and UI build scripts.
 
-## Setup & Development
+## 🚀 Setup & Development
 
-### Prerequisites
+Check for updates to the submodules.
+
+```bash
+git pull --recurse-submodules
+```
+
+### 📋 Prerequisites
 
 - Docker
-
 - Python 3
-
 - npm
 
-### Docker Workflow
+### 🐳 Docker Workflow
 
 1. **Build Images**: Constructs images for UI, API, and database services.
 
@@ -70,9 +76,9 @@ Shortcut to use `make dowwn; make build; make up` to rebuild and restart service
 make over
 ```
 
-### Direct Local Development
+### 💡 Direct Local Development
 
-Setup local development environment:
+Setup local development environment: 🛠️
 
 ```bash
 make local_build
@@ -92,7 +98,7 @@ make local
 
 Appending `_flask` or `_react` to the end of the above commands will manage either the Flask or React projects separately.
 
-### Commands Reference
+### 📘 Commands Reference
 
 For an exhaustive command list:
 
