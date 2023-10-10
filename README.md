@@ -78,7 +78,7 @@ make over
 
 ### 💡 Direct Local Development
 
-Setup local development environment: 🛠️
+Setup local development environment:
 
 ```bash
 make local_build
